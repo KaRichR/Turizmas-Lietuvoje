@@ -136,7 +136,7 @@ body{
     box-shadow: 0px 7px 21px 0px rgba(37, 44, 97, 0.20), 0px 3px 8px 0px rgba(136, 144, 194, 0.25);
 }
 
-.learn-more-btn:after {
+/* .learn-more-btn:after {
  background-clip: padding-box;
  background-color: #165ebb; 
  border: solid transparent;
@@ -168,7 +168,7 @@ body{
 .learn-more-btn:active {
  border-width: 4px 0 0;
  background: none;
-}
+} */
 
 .LankytinosVietos{
     width: 100%;
@@ -193,7 +193,74 @@ body{
 
 .LankytinosVietosMygtukai{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
+.lankytinosVietosMygtukai-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 250px);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.lankytinosVietosMygtukai{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 250px);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+}
+
+.LVmygtukas{
+    width: 200px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 3px solid #071931;
+    background: #1C6DD6;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*FOOTER*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #0C356A;
+    color: #fff;
+    padding: 20px 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-container {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info{
+    text-align: center;
+}
