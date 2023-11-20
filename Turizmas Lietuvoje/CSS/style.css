@@ -136,40 +136,6 @@ body{
     box-shadow: 0px 7px 21px 0px rgba(37, 44, 97, 0.20), 0px 3px 8px 0px rgba(136, 144, 194, 0.25);
 }
 
-/* .learn-more-btn:after {
- background-clip: padding-box;
- background-color: #165ebb; 
- border: solid transparent;
- border-radius: 16px;
- border-width: 0 0 4px;
- bottom: -4px;
- content: "";
- left: 0;
- position: absolute;
- right: 0;
- top: 0;
- z-index: -1;
-}
-
-.learn-more-btn:main,
-.button-19:focus {
- user-select: auto;
-}
-
-.learn-more-btn:hover:not(:disabled) {
- filter: brightness(1.1);
- -webkit-filter: brightness(1.1);
-}
-
-.learn-more-btn:disabled {
- cursor: auto;
-}
-
-.learn-more-btn:active {
- border-width: 4px 0 0;
- background: none;
-} */
-
 .LankytinosVietos{
     width: 100%;
     height: 869px;
@@ -263,4 +229,200 @@ footer {
 
 .footer-info{
     text-align: center;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+    /*HEADER*/
+
+    .navBar{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 1024px;
+        height: 100px;
+        background: #0c356a;
+        transform: 0.5s;
+        padding: 0 50px;
+        transition: 0.5s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navBar .logo{
+        color: #fff;
+        text-transform: none;
+        margin-right: 50px;
+        margin-top: 5px;
+    }
+    
+    .navBar ul{
+        list-style: none;
+        line-height: 70px;
+        margin-right: 100px;
+    }
+    
+    .navBar ul li{
+        display: inline-block;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .navBar ul li a{
+        color: white;
+        font-family: Raleway;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+    
+    .navBar ul li a:hover{
+        color: #03C988;
+    }
+    
+    .navBar.animate{
+        top: -100px;
+    }
+    
+    .navBar.sticky{
+        top: 0;
+        z-index: 99;
+    }    
+
+    /*MAIN*/
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .main-section {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('../IMG/MainPage/LEARNMORE.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        max-width: 1024px;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .short-info {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+    }
+
+    .titleTG{
+        flex-shrink: 0;
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .TGshortinfo{
+        width: 700px;
+        height: 430px;
+        flex-shrink: 0;
+        color: #FFF;
+        text-align: center; 
+        font-family: Raleway;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .learn-more-btn {
+        display: flex; 
+        width: 175px; 
+        height: 50px; 
+        padding: 16px 32px; 
+        justify-content: center; 
+        align-items: center; 
+        gap: 10px; 
+        flex-shrink: 0; 
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 10px; 
+        background: #0C356A; 
+        box-shadow: 0px 7px 21px 0px rgba(37, 44, 97, 0.20), 0px 3px 8px 0px rgba(136, 144, 194, 0.25);
+    }
+
+    .LankytinosVietos{
+        width: 100%;
+        height: 1100px;
+    }
+
+    .LankytinosVietosPavadinimas{
+        width: 472px;
+        height: 50px;
+        flex-shrink: 0;
+        color: #000;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .LankytinosVietosMygtukai{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .lankytinosVietosMygtukai-grid{
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 250px);
+            grid-column-gap: 100px;
+            grid-row-gap: 50px;
+    }
+
+    .lankytinosVietosMygtukai{
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(2, 250px);
+        grid-column-gap: 100px;
+        grid-row-gap: 50px;
+    }
+
+    .LVmygtukas{
+        width: 200px;
+        height: 250px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        border: 3px solid #071931;
+        background: #1C6DD6;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        color: #FFF;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
 }
