@@ -1,0 +1,77 @@
+/*
+Colors:
+color: #0C356A;
+color: #0174BE;
+color: #03C988;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+html,body{
+    overflow-x: hidden;
+}
+
+/*HEADER*/
+
+.navBar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: #0c356a;
+    transform: 0.5s;
+    padding: 0 100px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar .logo{
+    color: #fff;
+    text-transform: none;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+.navBar ul{
+    list-style: none;
+    line-height: 70px;
+    margin-right: 250px;
+}
+
+.navBar ul li{
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navBar ul li a{
+    color: white;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navBar ul li a:hover{
+    color: #03C988;
+}
+
+.navBar.animate{
+    top: -100px;
+}
+
+.navBar.sticky{
+    top: 0;
+    z-index: 99;
+}
+
+/*Kontaktai*/
