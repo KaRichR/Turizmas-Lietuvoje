@@ -14,7 +14,7 @@ html,body{
 
 /*HEADER*/
 
-.navBar{
+/* .navBar{
     position: fixed;
     left: 0;
     top: 0;
@@ -72,6 +72,21 @@ html,body{
 .navBar.sticky{
     top: 0;
     z-index: 99;
+} */
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;  
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #03C988 !important; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg-custom {
+    background-color: #0A6EBD;
 }
 
 /*MAIN*/
