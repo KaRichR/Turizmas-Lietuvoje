@@ -136,6 +136,19 @@ body{
     line-height: normal;
 }
 
+@media only screen and (max-width: 768px) {
+    .titleTG {
+        font-size: 40px; 
+    }
+
+    .TGshortinfo {
+        font-size: 20px; 
+        width: 80%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+}
+
 .learn-more-btn {
     display: flex; 
     width: 250px; 
@@ -154,6 +167,16 @@ body{
     border-radius: 10px; 
     background: #0A6EBD; 
     box-shadow: 0px 7px 21px 0px rgba(37, 44, 97, 0.20), 0px 3px 8px 0px rgba(136, 144, 194, 0.25);
+}
+
+@media only screen and (max-width: 767px) {
+    .learn-more-btn {
+        width: 180px;
+        height: 50px;
+        padding: 12px 24px;
+        font-size: 18px;
+        margin-top: 20px; 
+    }
 }
 
 .LankytinosVietos{
@@ -175,6 +198,12 @@ body{
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+}
+@media only screen and (max-width: 767px) {
+    .LankytinosVietosPavadinimas {
+        font-size: 40px; 
+        margin-top: 60px; 
+    }
 }
 
 /*FOOTER*/
@@ -208,3 +237,8 @@ footer {
     text-align: center;
 }
 
+@media only screen and (max-width: 767px) {
+    footer {
+        font-size: 16px; 
+    }
+}
