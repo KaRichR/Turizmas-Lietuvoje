@@ -58,10 +58,17 @@ html,body{
 }
 
 /*MAIN*/
-.kontaktai{
+.main{
     width: 100%;
     height: 1000px;
 }
+
+.searchBar{
+    height: 250px;
+    width: 100%;
+}
+
+#map { height: 1000px; }
 
 /*FOOTER*/
 body {
