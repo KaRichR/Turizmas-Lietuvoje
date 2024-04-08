@@ -70,6 +70,18 @@ html,body{
 
 #map { height: 1000px; }
 
+.searchBar {
+    height: 100px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.btn{
+    line-height: 1.5 !important;
+    width: 250px;
+}
+
+
 /*FOOTER*/
 body {
     margin: 0;
@@ -115,3 +127,26 @@ footer {
         font-size: 16px; 
     }
 }
+
+
+@media only screen and (max-width: 767px) {
+    .searchBar {
+        width: 90%; 
+    }
+
+    #savivaldybeFilter,
+    #sectorFilter {
+        width: 100%; 
+    }
+
+    .btn {
+        width: auto; 
+        line-height: 1.8 !important;
+        font-size: 14px !important;
+}
+
+.hide-on-mobile {
+    display: none; 
+}
+}
+

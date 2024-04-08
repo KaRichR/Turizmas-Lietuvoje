@@ -104,6 +104,12 @@ body{
     line-height: normal;
 }
 
+.bottom-image {
+    object-position: bottom;
+}
+
+
+
 @media only screen and (max-width: 768px) {
     .titleTG {
         font-size: 40px; 
@@ -153,7 +159,6 @@ body{
 }
 
 .LankytinosVietosPavadinimas{
-    width: 472px;
     height: 60px;
     flex-shrink: 0;
     color: #000;
@@ -174,6 +179,13 @@ body{
     }
 }
 
+@media (max-width: 576px) {
+    .LankytinosVietosPavadinimas {
+      text-align: center;
+    }
+  }
+  
+
 /*Slider*/
 #carouselExample {
     position: relative;
@@ -191,6 +203,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+  }
+
+  .card-text{
+    font-size: 18px !important;
   }
   
   .btn-primary {
