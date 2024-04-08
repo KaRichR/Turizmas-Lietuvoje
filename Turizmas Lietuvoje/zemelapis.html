@@ -38,13 +38,6 @@
                     <li class="nav-item">
                         <a href="kontaktai.html" class="nav-link">Kontaktai</a>
                     </li>
-                    <!-- Language buttons with smaller size -->
-                    <li class="nav-item">
-                        <a href="#" class="nav-link lang-btn" onclick="changeLanguage('en')">ENG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link lang-btn" onclick="changeLanguage('lt')">LT</a>
-                    </li>
                 </ul>
               </div>
         </div>
@@ -52,7 +45,49 @@
 
         <!-- MAIN -->
         <div class="searchBar">
-
+            
+            <select id="savivaldybeFilter">
+                <option value="All">All Savivaldybe</option>
+                <option value="Vilniaus miesto savivaldybė">Vilniaus miesto savivaldybė</option>
+                <option value="Vilniaus Rajono savivaldybė">Vilniaus Rajono savivaldybė</option>
+                <option value="Elektrėnų savivaldybė">Elektrėnų savivaldybė</option>
+                <option value="Šalčininkų rajono savivaldybė">Šalčininkų rajono savivaldybė</option>
+                <option value="Širvintų rajono savivaldybė">Širvintų rajono savivaldybė</option>
+                <option value="Švenčionių rajono savivaldybė">Švenčionių rajono savivaldybė</option>
+                <option value="Trakų rajono savivaldybė">Trakų rajono savivaldybė</option>
+                <option value="Ukmergės rajono savivaldybė">Ukmergės rajono savivaldybė</option>
+            </select>
+            
+            <select id="sectorFilter">
+                <option value="All">All Sectors</option>
+                <option value="beach">Beach</option>
+                <option value="biggest_lake">Biggest Lake</option>
+                <option value="bridge">Bridge</option>
+                <option value="castle">Castle</option>
+                <option value="cave">Cave</option>
+                <option value="cemetery">Cemetery</option>
+                <option value="chapel">Chapel</option>
+                <option value="church">Church</option>
+                <option value="dune">Dune</option>
+                <option value="hill">Hill</option>
+                <option value="historical_landmark">Historical Landmark</option>
+                <option value="manor">Manor</option>
+                <option value="mound">Mound</option>
+                <option value="museum">Museum</option>
+                <option value="observation_deck">Observation Deck</option>
+                <option value="park">Park</option>
+                <option value="pit">Pit</option>
+                <option value="popular_place">Popular Place</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="sculpture">Sculpture</option>
+                <option value="ski_resort">Ski Resort</option>
+                <option value="stone">Stone</option>
+                <option value="street">Street</option>
+            </select>
+            
+            <button id="filterBtn">Apply Filters</button>
+            
+            
         </div>
 
         <div class="main">
