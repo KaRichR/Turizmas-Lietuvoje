@@ -74,11 +74,27 @@ html,body{
     height: 100px;
     width: 65%;
     margin: 0 auto;
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
 }
 
-.btn{
+.searchBar > * {
+    margin-right: 5px; /* Add margin between the elements */
+}
+
+.btn {
     line-height: 1.5 !important;
-    width: 250px;
+    width: 300px;
+}
+
+.btn-primary {
+    line-height: 1.8 !important;
+    font-size: 14px !important;
+}
+
+.smaller-button {
+    text-align: center;
 }
 
 

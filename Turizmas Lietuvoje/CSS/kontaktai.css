@@ -68,7 +68,7 @@ html,body{
 }
 
 .contact-info p {
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
     padding-left: 100px; 
     font-family: 'Raleway', sans-serif; 
 }
@@ -82,7 +82,7 @@ html,body{
 }
 
 .contact-header {
-    padding: 50px 0;
+    padding: 25px 0;
     margin-left: 100px; 
 }
 
