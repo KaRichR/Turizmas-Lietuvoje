@@ -59,6 +59,14 @@ html,body{
 
 /* CONTACT INFO */
 
+.contact-header,
+.contact-info,
+.contact-info p,
+.contact-info strong,
+.contact-info a {
+    font-family: 'Raleway', sans-serif;
+}
+
 .contact-info p {
     margin-bottom: 20px; 
     padding-left: 100px; 
